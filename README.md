@@ -3,17 +3,43 @@
 
  ## Part 1 - Simple Drone App
 
- Controls are as follows:
- 1. Move Drone: Push the right thumb stick in any direction to move the drone.
+### A. Testing other apk
+1. APK 1:
+Drone rotation is bound to - Right Stick
+Player Movement is bound to - Left Stick
+
+Translation is bound to - Index Trigger and Middle Trigger buttons
+Pressing both index trigger makes the drone go forward
+Pressing both middle trigger makes the drone go backward
+Pressing the index and trigger on the right controller makes the drone go right 
+Pressing the index and trigger on the left controller makes the drone go left 
+
+Lazer is bound to - A (to turn on) and B (to turn off)
+
+2. APK 2:
+Drone movement is bound to - Right Stick
+Player Movement is bound to - Left Stick
+Lazer is bound to - Right Index Trigger (to turn on) and Left Index Trigger (to turn off)
+Could not figure out how to make the drone turn left/right.
+
+3. APK 3:
+Drone movement is bound to - Right Stick
+Player Movement is bound to - Left Stick
+Lazer is bound to - A (to turn on) and B (to turn off)
+Drone can be turned right using right index trigger and turned left using left trigger index
+
+### B. Documentation of Control Scheme:
+
+ 1.Drone Translation: Push the right thumb stick in any direction to move the drone.
  ```
 The right analog stick is used for primary actions relating to movement in most video games.
-Since main focus of this application is to control the drone, the right analog stick was used
+Since main focus of this application is to control the drone, the right analog stick was bound to drone movement.
 ```
- 2. Change translation to rotation: You can press the right thumb stick to toggle between translation and rotation mode.
+ 2. Change translation to rotation mode: You can press the right thumb stick to toggle between translation and rotation mode.
 ```
-Pressing the right thumb stick (to toggle rotation and translation) is not the most intuitively discoverable 
-features by the user. However, once user is used to this method, they do not have to move their fingers to 
-another button freeing up the button for another functionality and reducing the time for the task.
+Pressing the right thumb stick (to toggle rotation and translation) is not the most intuitively
+discoverable feature by the user. However, once user is used to this keybind, they do not have to move 
+their fingers to reducing the time for the task while concurrently utilising the controller efficiently.
 ```
  3. Rotate Drone:  Moving thumb stick left or right will rotate the drone in anti-clockwise and clockwise direction respectively.
  ```
@@ -30,6 +56,11 @@ To turn laser on and off, the right index trigger is used. Using two buttons to 
 inefficient use of the controller buttons. Trigger buttons are usually used for secondary action 
 while ABXY buttons are used for primary actions but it can vary depending on user preferences.
 ```
+
+
+
+
+
  ## Part 2 - Train Hands Interaction Scene
 
  Added Behaviors:
